@@ -975,16 +975,16 @@ button:focus {
   height: 30rem;
 }
 .portfolio-card__img_1 {
-  background: url(/img/1.jpg) center/cover no-repeat;
+  background: url(../img/1.jpg) center/cover no-repeat;
 }
 .portfolio-card__img_2 {
-  background: url(/img/2.jpg) center/cover no-repeat;
+  background: url(../img/2.jpg) center/cover no-repeat;
 }
 .portfolio-card__img_3 {
-  background: url(/img/3.jpg) center/cover no-repeat;
+  background: url(../img/3.jpg) center/cover no-repeat;
 }
 .portfolio-card__img_4 {
-  background: url(/img/4.jpg) center/cover no-repeat;
+  background: url(../img/4.jpg) center/cover no-repeat;
 }
 @media only screen and (max-width: 991px) {
   .portfolio-card__img {
