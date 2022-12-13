@@ -58,7 +58,7 @@ function changeSlide(direction) {
 
 
 //Инициализируем swiper
-var swiper = new Swiper(".mySwiper", {
+var swiper = new swiper(".mySwiper", {
 
   breakpoints: {
     431: {
