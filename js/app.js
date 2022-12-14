@@ -8,7 +8,7 @@ const slidesCount = mainSlide.querySelectorAll('.main-slide__img').length
 
 let activeSlideIndex = 0
 if (window.matchMedia("(max-width: 575px)").matches) {
-  sidebar.style.top = `-${(slidesCount - 1) * 500}px`
+  sidebar.style.top = `-${(slidesCount - 1) * 400}px`
 }
 else if (window.matchMedia("(max-width: 767px)").matches) {
   sidebar.style.top = `-${(slidesCount - 1) * 500}px`
@@ -58,10 +58,10 @@ function changeSlide(direction) {
 
 
 //Инициализируем swiper
-var swiper = new swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
 
   breakpoints: {
-    431: {
+    400: {
       slidesPerView: 2,
       spaceBetween: 15,
       slidesPerGroup: 1,
@@ -97,22 +97,4 @@ var swiper = new swiper(".mySwiper", {
     enabled: true,
     onlyViewport:true,
   },
-});
-
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-  get: function () {
-      return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-  }
-});
-
-$('body').on('click touchstart', function () {
-  const videoElement = document.getElementById('myVideoId');
-  if (videoElement.playing) {
-      // video is already playing so do nothing
-  }
-  else {
-      // video is not playing
-      // so play video now
-      videoElement.play();
-  }
 });
